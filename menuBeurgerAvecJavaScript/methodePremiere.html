@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="js/all.js"></script> 
+    <script defer src="js/brands.js"></script>
+    <script defer src="js/solid.js"></script>
+    <script defer src="js/fontawesome.js"></script>
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="styleMenuBeuger.css">
+    <title>menu beurger1</title>
+</head>
+<body>
+    <div class="navigation" id="navigationHaut">
+        <nav>
+            <a href="#menu_1" class="active">menu_1</a>
+            <a href="#menu_2">menu_2</a>
+            <a href="#menu_3">menu_3</a>
+            <a href="#menu_4">menu_4</a>
+            <a href="javascript:void(0);" class="icon" onclick="menubeurger()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <script>
+            function menubeurger() {
+              var x = document.getElementById("navigationHaut");
+              if (x.className == "navigation") {
+                x.className += " responsive";
+              } else {
+                x.className = "navigation";
+              }
+            }
+            </script>
+
+    </div>
+</body>
+</html>

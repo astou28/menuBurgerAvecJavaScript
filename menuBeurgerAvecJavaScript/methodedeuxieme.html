@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="js/all.js"></script> 
+    <script defer src="js/brands.js"></script>
+    <script defer src="js/solid.js"></script>
+    <script defer src="js/fontawesome.js"></script>
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="styleMenuBeuger2.css">
+    <title>deuxieme methode menu beuger</title>
+</head>
+<body>
+                <div class="petitEcran">
+                <div class="navigation">
+                    <nav>
+                        <a href="#" class="active">logo</a>
+                        <div id="mesMenu">
+                        <a href="#menu_1">menu_1</a>
+                        <a href="#menu_2">menu_2</a>
+                        <a href="#menu_3">menu_3</a>
+                        <a href="#menu_4">menu_4</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="menubeuger()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+                </div>
+                </div>
+                <script>
+                function menubeuger() {
+                var menu = document.getElementById("mesMenu");
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";}
+                }
+                </script>
+    
+</body>
+</html>

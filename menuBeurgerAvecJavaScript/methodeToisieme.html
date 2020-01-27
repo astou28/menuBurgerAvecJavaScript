@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="js/all.js"></script>
+    <script defer src="js/brands.js"></script>
+    <script defer src="js/solid.js"></script>
+    <script defer src="js/fontawesome.js"></script>
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="styleMenuBeurger3.css">
+    <title>troisiemeMethode</title>
+</head>
+<body>  
+          <script>
+            function openNav() {
+                document.getElementById("navigationHaut").style.width = "250px";
+                document.getElementById("nume").style.marginLeft = "250px";
+            } 
+            function closeNav() {
+                document.getElementById("navigationHaut").style.width = "0";
+                document.getElementById("nume").style.marginLeft = "0";
+            }
+        </script>
+        
+        <div class="navigation" id="navigationHaut"> 
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+            <a href="#menu_1" class="active">menu_1</a>
+            <a href="#menu_2">menu_2</a>
+            <a href="#menu_3">menu_3</a>
+            <a href="#menu_4">menu_4</a>
+        </div>
+        <nav class="topnav">
+            <a href="#" id="icoOpen" onclick="openNav()">
+              <i style="float:right" class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <div id="nume"></div>
+
+</body>
+</html>
